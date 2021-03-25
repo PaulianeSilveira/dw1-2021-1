@@ -1,0 +1,9 @@
+/*Links em geral*/
+a {
+    color: orangered;
+  }
+
+/* Links já visitados*/
+a:visited {
+    color: green;
+}

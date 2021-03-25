@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áudio em HTML</title>
+</head>
+<body>
+    <h1>Áudio em HTML</h1>
+
+    <h2>Formatos comuns de arquivos de áudio</h2>
+<ul>
+    <li><strong>MP3</strong>. Formato de áudio mais popular na atualidade. Foi desenvolvido pelo instituto alemão Fraunhofer em 1993, como um formato de áudio de compressão com perdas. No entanto, seu uso estava sujeito a patentes até 2012, o que causou vários problems legais. Atualmente seu uso é livre. A sigla MP3 significa<em>Motion Picture Experts Group</em> (Group de Especialistas em Imagens em Movimento).
+    </li>
+    <li><strong>OGG</strong>.Também conhecido como OGG Vorbis, foi desenvolvido pela função Xiph.org e lançado em 2000 como uma alternativa livre ao MP3. Apesar de ter mais qualidade técnica, nunca alcançou a popularidade do concorrente. Também é um formato de compressão com perdas.</li>
+    <li><strong>WAV</strong>. Formato nativo de áudio dos sistemas operacionais da Microsoft e da IBM, lançado em 1991. Armazena o áudio sem compressão; portanto, os arquivos .wav são bem maiores que os outros formatos, embora a qualidade sonora também seja melhor.</li>
+</ul>
+<h2>Exemplo de áudio</h2>
+<!--
+    Opções da tag <audio>:
+    controls -> mostra os controles do player
+    autoplay -> ao carregar a página, já inicia a reprodução
+    loop -> reproduz repetidamente
+    preload -> Precarrega algumas informações. Valores possíveis:
+    *metadata: carrega só as informações sobre o arquivo, como sua duração
+    *none: não carrega nada antecipadamente
+    *auto (padrão): carrega o áudio inteiro, mesmo que o usuário nunca dê o play
+-->
+<audio preload="metadata" controls src="audio/trilha.mp3"></audio>
+    <!-- Seo navagador for muito antigo e incapaz de reproduzir será exibida a mesagem abaixo:-->
+    <p>Seu navegador não suporta áudios nativos HTML. Faça o <a href="audio/trilha.mp3" download="trilha.mp3" type="audio/mpeg">download</a> do arquivo.</p>
+</audio>
+
+<h2>Exemplo de áudio com múltiplas fontes</h2>
+
+<audio preload="metadata" controls>
+    <source src="audio/trilha.mp3" type="audio/mpeg">
+    <source src="audio/trilha.ogg" type="audio/ogg">
+    <source src="audio/trilha.wav" type="audio/wav">
+    <p>Seu navegador não suporta áudios nativos HTML. Faça o <a href="audio/trilha.mp3" download="trilha.mp3" type="audio/mpeg">download</a> do arquivo.</p>
+</audio>
+
+<h1>Vídeo em HTML</h1>
+<h2>Exemplo e vídeo com múltiplas fontes</h2>
+
+<video controls width="400px" poster="video/reduzir-pdf-thumb.png">
+    <source src="video/reduzir-pdf.mp4" type="video/mp4">
+    <source src="video/reduzir-pdf.ogv" type="video/ogg">
+    <source src="video/reduzir-pdf.webm" type="video/webm">
+    <p> Não foi possível baixar o vídeo.Faça o <a href="video/reduzir-pdf.mp4"download="reduzir-pdf.mp4" type="video/mp4">download</a> do arquivo.</p>>
+  </video>
+  
+</body>
+</html>
+    
