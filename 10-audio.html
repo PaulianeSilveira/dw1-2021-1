@@ -27,17 +27,18 @@
     *auto (padrão): carrega o áudio inteiro, mesmo que o usuário nunca dê o play
 -->
 <audio preload="metadata" controls src="audio/trilha.mp3"></audio>
-    <!-- Seo navagador for muito antigo e incapaz de reproduzir será exibida a mesagem abaixo:-->
+    <!-- Se o navagador for muito antigo e incapaz de reproduzir será exibida a mesagem abaixo:-->
     <p>Seu navegador não suporta áudios nativos HTML. Faça o <a href="audio/trilha.mp3" download="trilha.mp3" type="audio/mpeg">download</a> do arquivo.</p>
 </audio>
 
 <h2>Exemplo de áudio com múltiplas fontes</h2>
 
 <audio preload="metadata" controls>
+    <!-- Os sources são arranjados em ordem de prioridade. -->
     <source src="audio/trilha.mp3" type="audio/mpeg">
     <source src="audio/trilha.ogg" type="audio/ogg">
     <source src="audio/trilha.wav" type="audio/wav">
-    <p>Seu navegador não suporta áudios nativos HTML. Faça o <a href="audio/trilha.mp3" download="trilha.mp3" type="audio/mpeg">download</a> do arquivo.</p>
+    <p>Seu navegador não suporta áudios nativos HTML. Faça o <a href="audio/trilha.mp3" download="trilha.mp3" type="audio/mpeg">download </a>do arquivo.</p>
 </audio>
 
 <h1>Vídeo em HTML</h1>
@@ -47,7 +48,7 @@
     <source src="video/reduzir-pdf.mp4" type="video/mp4">
     <source src="video/reduzir-pdf.ogv" type="video/ogg">
     <source src="video/reduzir-pdf.webm" type="video/webm">
-    <p> Não foi possível baixar o vídeo.Faça o <a href="video/reduzir-pdf.mp4"download="reduzir-pdf.mp4" type="video/mp4">download</a> do arquivo.</p>>
+    <p> Não foi possível baixar o vídeo.Faça o <a href="video/reduzir-pdf.mp4"download="reduzir-pdf.mp4" type="video/mp4">download </a>do arquivo.</p>
   </video>
   
 </body>
